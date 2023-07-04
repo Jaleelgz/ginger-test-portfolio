@@ -49,6 +49,10 @@ body {
   display: block;
 }
 
+.navlinkContainer > .icon {
+  display: none;
+}
+
 .navlinkContainer > button {
   border-radius: 100px;
   background: #4e5861;
@@ -63,6 +67,32 @@ body {
   border: none;
   cursor: pointer;
   margin-left: 20px;
+}
+
+/* Mobile NavBar */
+.mobileNavBarContainer {
+  display: none;
+}
+
+.mobileNavBarContainer a {
+  display: block;
+  background-color: #fff;
+  width: 100%;
+  padding: 10px;
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+}
+
+.mobileNavBarContainer a:hover {
+  color: red;
+  background-color: #bcbcbc;
+}
+
+.responsive {
+  display: none;
 }
 
 /* Banner */
@@ -406,8 +436,13 @@ footer #footerTxt {
 }
 
 @media only screen and (max-width: 700px) {
-  .navlinkContainer > a {
+  .navlinkContainer > a,
+  .navlinkContainer > button {
     display: none;
+  }
+
+  .navlinkContainer > .icon {
+    display: block;
   }
 
   .bannerContainer {
@@ -438,5 +473,9 @@ footer #footerTxt {
 
   .footerContainer .footerFlex {
     margin: 50px auto;
+  }
+
+  .responsive {
+    display: block;
   }
 }

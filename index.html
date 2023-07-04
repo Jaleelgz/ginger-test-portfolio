@@ -17,7 +17,6 @@
     />
   </head>
 
-
   <body>
     <!-- Nav -->
     <nav class="parentContainer">
@@ -36,10 +35,20 @@
           <a href="#Contact">Contact</a>
 
           <button>Contact me</button>
+          <a href="javascript:void(0);" class="icon" onclick="toggleNavBar()">
+            <i class="fa fa-bars"></i>
+          </a>
         </div>
-
       </div>
     </nav>
+
+    <section id="mobileNavBar" class="maxWidthContainer mobileNavBarContainer">
+      <a onclick="hideNavBar()" href="#">Home</a>
+      <a onclick="hideNavBar()" href="#About">About</a>
+      <a onclick="hideNavBar()" href="#Portfolio">Portfolio</a>
+      <a onclick="hideNavBar()" href="#Blog">Blog</a>
+      <a onclick="hideNavBar()" href="#Contact">Contact</a>
+    </section>
 
     <!-- Banner -->
     <section id="Home" class="maxWidthContainer bannerContainer">
@@ -80,9 +89,6 @@
       <img src="./assets/profile.png" alt="Profile img" class="profileimg" />
     </section>
 
-
-
-
     <!-- About -->
     <section id="About" class="maxWidthContainer aboutContainer">
       <p class="headMainTxt">About me</p>
@@ -108,8 +114,6 @@
 
       <button>Know more</button>
     </section>
-
-
 
     <!-- Portfolio -->
     <section id="Portfolio" class="maxWidthContainer portfolioContainer">
@@ -140,8 +144,6 @@
       </div>
     </section>
 
-
-
     <!-- Got recognised -->
     <section class="maxWidthContainer gotrContainer">
       <p class="headMainTxt">Got Recognised</p>
@@ -171,8 +173,6 @@
         />
       </div>
     </section>
-
-
 
     <!-- Blogs -->
     <section id="Blog" class="maxWidthContainer blogsContainer">
@@ -205,8 +205,6 @@
       </div>
     </section>
 
-
-
     <!-- Last sign -->
     <section class="maxWidthContainer lastSignContainer">
       <div class="lastTxtContainer">
@@ -221,8 +219,6 @@
         </div>
       </div>
     </section>
-
-
 
     <!-- Footer -->
     <footer id="Contact" class="maxWidthContainer footerContainer">
@@ -274,5 +270,21 @@
       </p>
     </footer>
 
+    <script>
+      function toggleNavBar() {
+        var x = document.getElementById("mobileNavBar");
+        if (x.className === "maxWidthContainer mobileNavBarContainer") {
+          x.className += " responsive";
+        } else {
+          x.className = "maxWidthContainer mobileNavBarContainer";
+        }
+      }
+
+      function hideNavBar() {
+        var x = document.getElementById("mobileNavBar");
+
+        x.className = "maxWidthContainer mobileNavBarContainer";
+      }
+    </script>
   </body>
 </html>
