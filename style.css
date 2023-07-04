@@ -1,0 +1,442 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: black;
+  scroll-behavior: smooth;
+}
+
+.maxWidthContainer {
+  max-width: 1512px;
+  padding: 2vw 5vw;
+  width: 100%;
+  margin: auto;
+}
+
+/* NavBar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.gingerLogo {
+  height: clamp(54.75px, 4.8vw, 73px);
+  object-fit: contain;
+}
+
+.navlinkContainer {
+  display: flex;
+  align-items: center;
+  gap: clamp(10px, 2vw, 49px);
+}
+
+.navlinkContainer > a {
+  color: #fff;
+  font-size: clamp(15px, 1.19vw, 18px);
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration: none;
+  display: block;
+}
+
+.navlinkContainer > button {
+  border-radius: 100px;
+  background: #4e5861;
+  color: #fff;
+  font-size: 14px;
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding: 10px 12px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+/* Banner */
+.bannerContainer {
+  display: flex;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.bannerTxtContainer {
+  border-radius: clamp(37.5px, 3.3vw, 50px);
+  background: #2e353c;
+  padding: clamp(45px, 3.96vw, 60px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.bannerTxtContainer .headTxt {
+  color: #fff;
+  font-size: clamp(41.25px, 3.63vw, 55px);
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.bannerTxtContainer .headTxt > span {
+  color: #12eb48 !important;
+}
+
+.bannerTxtContainer .descTxt {
+  color: #bcbcbc;
+  font-size: clamp(15px, 1.19vw, 18px);
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 20px;
+  margin-bottom: 70px;
+}
+
+.bannerTxtContainer > .socialContainer {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.socialContainer > button {
+  border-radius: 100px;
+  background: #ffffff;
+  color: #000;
+  font-size: 14px;
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding: 10px 12px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.socialContainer > .iconBtn {
+  height: 33px;
+  width: 33px;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bannerContainer > .profileimg {
+  width: clamp(368.25px, 32.47vw, 491px);
+  object-fit: contain;
+}
+
+/* About */
+.aboutContainer {
+  background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0) 100%),
+    url("./assets/about-bg.png") no-repeat right center / cover;
+  margin-top: 20px;
+}
+
+.headMainTxt {
+  color: #fff;
+  font-size: clamp(37.5px, 3.3vw, 50px);
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 70px;
+}
+.subTxt {
+  color: #fff;
+  font-size: clamp(15px, 1.32vw, 20px);
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 20px;
+  width: 70%;
+}
+
+.aboutContainer > button {
+  border-radius: 100px;
+  background: #4e5861;
+  color: #fff;
+  font-size: 14px;
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding: 10px 12px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
+
+/* Portfolio */
+
+.portfolioContainer > .imgParentContainer {
+  display: flex;
+  row-gap: clamp(22.5px, 1.98vw, 30px);
+  column-gap: clamp(22.5px, 1.98vw, 30px);
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.childImgContainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: clamp(22.5px, 1.98vw, 30px);
+  column-gap: clamp(22.5px, 1.98vw, 30px);
+  flex: 1;
+}
+
+.childImgContainer > .galleryImg {
+  width: 100%;
+  object-fit: contain;
+}
+
+.smImgContainer {
+  display: flex;
+  gap: clamp(22.5px, 1.98vw, 30px);
+}
+.smImgContainer > .smGalleryImg {
+  width: calc(50% - 15px);
+  object-fit: contain;
+  flex: 1;
+}
+
+/* Got recognised */
+
+.gotrContainer > .headMainTxt {
+  text-align: center;
+}
+
+.gotrContainer > .gotrImgContainer {
+  display: flex;
+  align-items: center;
+  column-gap: 60px;
+  row-gap: 35px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.gotrImgContainer > .gotrImg {
+  height: 30px;
+  object-fit: contain;
+}
+
+/* Blogs */
+
+.blogsContainer > .blogScrollContainer {
+  display: flex;
+  gap: 34px;
+  overflow: auto;
+  margin-top: 40px;
+  justify-content: space-between;
+}
+
+.blogScrollItem {
+  position: relative;
+}
+
+.blogScrollItem > .blogImg {
+  width: clamp(300px, 26.45vw, 400px);
+  object-fit: contain;
+}
+
+.blogScrollItem > p {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  right: 25px;
+  color: #fff;
+  font-size: clamp(18.75px, 1.65vw, 25px);
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-align: center;
+}
+
+.blogScrollItem > button {
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+  height: 50px;
+  width: 50px;
+  border-radius: 100px;
+  background-color: #fff;
+  rotate: -45deg;
+  font-size: 22px;
+}
+
+/* Last sign */
+.lastSignContainer {
+  background: linear-gradient(to left, #000 0%, rgba(0, 0, 0, 0) 100%),
+    url("./assets/last.png") no-repeat right center / cover;
+  height: 540px;
+  margin-top: 40px;
+}
+
+.lastSignContainer > .lastTxtContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.lastTxtContainer p {
+  max-width: 485px;
+}
+
+.lastTxtContainer > .hrContainer {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.hrContainer hr {
+  width: 30px;
+  height: 1px;
+}
+
+.hrContainer p {
+  color: #a4a4a4;
+  font-size: clamp(15px, 1.32vw, 20px);
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+/* Footer */
+.footerContainer .footerFlex {
+  display: flex;
+  column-gap: 30px;
+  row-gap: 50px;
+  justify-content: space-between;
+  margin: 7vw auto;
+  flex-wrap: wrap;
+}
+
+.footerContainer .footerHeadTxt {
+  color: #fff;
+  font-size: clamp(18.75px, 1.65vw, 25px);
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1px;
+}
+
+.footerContainer .footerSub {
+  margin-top: 20px;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #a3a3a3;
+  font-size: clamp(15px, 1.32vw, 20px);
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1.2px;
+}
+
+.footerSub .socialIcons {
+  font-size: clamp(15px, 1.32vw, 20px);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.footerSub input {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-bottom: 2px solid #868686;
+}
+
+footer hr {
+  background: #474747;
+  margin: auto;
+  width: 100%;
+}
+
+footer #footerTxt {
+  color: #fff;
+  font-size: clamp(15px, 1.19vw, 18px);
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+  margin: 25px auto;
+}
+
+/* Responsive */
+@media only screen and (max-width: 1000px) {
+  .bannerContainer {
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+  }
+
+  .bannerContainer > .profileimg {
+    width: 100%;
+    object-fit: contain;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .navlinkContainer > a {
+    display: none;
+  }
+
+  .bannerContainer {
+    flex-direction: column-reverse;
+  }
+
+  .bannerContainer > .profileimg {
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .bannerTxtContainer {
+    padding: 20px;
+  }
+
+  .subTxt {
+    width: 100%;
+  }
+
+  .imgParentContainer {
+    flex-direction: column;
+  }
+
+  .lastSignContainer {
+    height: auto;
+    min-height: 300px;
+  }
+
+  .footerContainer .footerFlex {
+    margin: 50px auto;
+  }
+}
